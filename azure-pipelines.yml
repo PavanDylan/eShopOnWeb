@@ -14,8 +14,7 @@ stages:
     displayName: Build
     jobs:
       - job: Build
-        pool:
-         vmImage: ubuntu-latest
+        pool: Default
         steps:
         - task: DotNetCoreCLI@2
           displayName: restore
